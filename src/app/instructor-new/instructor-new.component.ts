@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import instructors from '../instructors'
 
 @Component({
   selector: 'instructor-new',
@@ -12,7 +13,7 @@ export class InstructorNewComponent implements OnInit {
   address = '';
   phone = '';
   age = '';
-  instructors = [];
+  instructors = instructors;
 
   constructor() { }
 
@@ -20,11 +21,9 @@ export class InstructorNewComponent implements OnInit {
   }
 
   addInstructor() {
-    this.instructors.push(this.name);
-    this.instructors.push(this.email);
-    this.instructors.push(this.address);
-    this.instructors.push(this.phone);
-    this.instructors.push(this.age);
+    this.instructors.push({
+      name: this.name, email: this.email, address: this.address, phone: this.phone,
+      age: this.age});   
 
     console.log(this.instructors)
   }

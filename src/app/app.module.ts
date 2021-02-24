@@ -6,6 +6,8 @@ import { InstructorNewComponent } from './instructor-new/instructor-new.componen
 import { InstructorListComponent } from './instructor-list/instructor-list.component';
 
 import {FormsModule} from '@angular/forms'
+import { NgxMaskModule } from 'ngx-mask'
+
 
 
 @NgModule({
@@ -17,6 +19,7 @@ import {FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     FormsModule,
+    NgxMaskModule.forRoot({dropSpecialCharacters: false}),
   ],
   providers: [],
   bootstrap: [AppComponent]

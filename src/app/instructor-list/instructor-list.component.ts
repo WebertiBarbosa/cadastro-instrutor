@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import instructors from '../instructors'
+
 
 @Component({
   selector: 'instructor-list',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instructor-list.component.scss']
 })
 export class InstructorListComponent implements OnInit {
+
+  instructors = instructors
 
   constructor() { }
 

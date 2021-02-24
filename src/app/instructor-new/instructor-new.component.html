@@ -1,6 +1,7 @@
 <div class="container">  
-    <img src="../../assets/workout3.jpg" class="img-fluid" alt="Imagem da Academia">
-    <h1>Torne-se instrutor na melhor<br> academia da cidade!</h1> 
+  <h1>Torne-se instrutor na melhor<br> academia da cidade!</h1> 
+  <img src="../../assets/workout3.jpg" class="img-fluid" alt="Imagem da Academia">
+  <h2>Cadastre-se no formulário abaixo:</h2>
 </div>
 
 
@@ -25,7 +26,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="inputTel">Telefone</label>
-        <input type="text" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" class="form-control" id="inputTel">
+        <input type="text" [(ngModel)]="phone" prefix="+55" mask=" (00) 00000-0000" [ngModelOptions]="{standalone: true}" class="form-control" id="inputTel">
       </div>
     </div>    
 
@@ -44,7 +45,7 @@
         </label>
       </div>
     </div>
-    <button type="button" (click)="addInstructor()" class="btn btn-primary">Adicionar</button>
+    <button type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>
   </form>
 </div>
 
