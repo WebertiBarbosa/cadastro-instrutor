@@ -9,15 +9,18 @@
         <th scope="col">Endereço</th>
         <th scope="col">Telefone</th>
         <th scope="col">Idade</th>
+        <th scope="col">Modalidade</th>
+        
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let instructor of instructors">
-        <td>{{instructor.name}}</td>
-        <td>{{instructor.email}}</td>
-        <td>{{instructor.address}}</td>
-        <td>{{instructor.phone}}</td>
-        <td>{{instructor.age}}</td>
+        <td [innerHtml]="instructor.name"></td>
+        <td [innerHtml]="instructor.email"></td>
+        <td [innerHtml]="instructor.address"></td>
+        <td [innerHtml]="instructor.phone"></td>
+        <td [innerHtml]="instructor.age"></td>
+        <td [innerHtml]="instructor.modality"></td>
         
       </tr>
     </tbody>

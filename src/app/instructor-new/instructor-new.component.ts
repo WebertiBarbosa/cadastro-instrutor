@@ -13,6 +13,8 @@ export class InstructorNewComponent implements OnInit {
   address = '';
   phone = '';
   age = '';
+  modality = '';
+
   instructors = instructors;
 
   constructor() { }
@@ -23,7 +25,7 @@ export class InstructorNewComponent implements OnInit {
   addInstructor() {
     this.instructors.push({
       name: this.name, email: this.email, address: this.address, phone: this.phone,
-      age: this.age});   
+      age: this.age, modality: this.modality});   
 
     console.log(this.instructors)
   }
