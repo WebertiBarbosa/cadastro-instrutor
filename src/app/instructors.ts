@@ -1,10 +1,11 @@
+
 interface Instructor {
   name: string;
   email: string;
   address: string;
   phone: string;
-  age: string;
-  modality: string;
+  age: number;
+  especialidade: string;
 }
 
 const instructors: Instructor[] = []

@@ -1,0 +1,40 @@
+[{
+  "id":"1",
+  "name": "Musculação"
+},
+{
+  "id":"2",
+  "name": "Spinning"
+},
+{
+  "id":"3",
+  "name": "Power Jump"
+},
+{
+  "id":"4",
+  "name": "Zumba" 
+},
+{
+  "id":"5",
+  "name": "Yoga"
+},
+{
+  "id":"6",
+  "name": "Pilates" 
+},
+{
+  "id":"7",
+  "name": "Funcional"
+},
+{
+  "id":"8",
+  "name": "Body Pump"
+},
+{
+  "id":"9",
+  "name": "Alongamento"
+},
+{
+  "id":"10",
+  "name": "Lutas"
+}]

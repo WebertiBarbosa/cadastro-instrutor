@@ -36,6 +36,20 @@
         <input type="number" [(ngModel)]="age" [ngModelOptions]="{standalone: true}" class="form-control" id="inputIdade" placeholder="Digite sua idade">
       </div>
     </div>   
+
+    <!-- <div class="form-group mb-3">
+      <label for="modality">Modalidade</label>
+
+      <select id="modality" name="modality" 
+        [(ngModel)]="selectedModality" class="form-control">
+        
+        <option *ngFor='let modality of modality' [value]='modality.name'>
+          {{modality.name}}
+        </option>
+        
+      </select>
+    </div> -->
+
     
     <div class="input-group mb-3">
       <select class="custom-select" id="inputGroupSelect02">
@@ -56,7 +70,29 @@
       </div>
     </div>
 
-    <button type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>
+
+    <!-- <div class="form-group mb-3">
+      <label for="modality">Especialidade</label>
+
+      <select id="modality" name="modality" 
+        [(ngModel)]="selectedModality" class="form-control">
+      
+        <select class="form-control">
+
+        <option *ngFor='let especialidade of especialidades' >
+          {{especialidade.name}}
+        </option>
+        
+      </select>
+    </div> -->
+
+
+    
+      
+        <button *ngIf="age >= 18" type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>
+      
+      
+   
   </form>
 </div>
 

@@ -9,7 +9,7 @@
         <th scope="col">Endereço</th>
         <th scope="col">Telefone</th>
         <th scope="col">Idade</th>
-        <th scope="col">Modalidade</th>
+        <th scope="col">Especialidade</th>
         
       </tr>
     </thead>
@@ -19,8 +19,8 @@
         <td [innerHtml]="instructor.email"></td>
         <td [innerHtml]="instructor.address"></td>
         <td [innerHtml]="instructor.phone"></td>
-        <td [innerHtml]="instructor.age"></td>
-        <td [innerHtml]="instructor.modality"></td>
+        <td [innerHtml]="instructor.age" [style.color]='getInstructorAge(instructor)'></td>
+        <td [innerHtml]="instructor.especialidade"></td>
         
       </tr>
     </tbody>

@@ -16,4 +16,8 @@ export class InstructorListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getInstructorAge(instructor){
+    return instructor.age < 18 ? 'green':  'blue';
+  }
+
 }
