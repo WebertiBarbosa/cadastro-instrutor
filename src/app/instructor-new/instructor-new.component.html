@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <button *ngIf="instructor.age >= 18" type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>  
+    <button [disabled]="instructor.age < 18" type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>  
   
   </form>
 </div>
