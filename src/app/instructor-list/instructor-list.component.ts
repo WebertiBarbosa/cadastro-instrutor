@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import instructors from '../instructors'
+import { InstructorService } from '../instructor.service';
+
 
 
 @Component({
@@ -9,9 +11,9 @@ import instructors from '../instructors'
 })
 export class InstructorListComponent implements OnInit {
 
-  instructors = instructors
+  //instructors = instructors
 
-  constructor() { }
+  constructor(public instructorService: InstructorService) { }
 
   ngOnInit(): void {
   }

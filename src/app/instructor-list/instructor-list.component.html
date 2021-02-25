@@ -14,7 +14,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let instructor of instructors">
+      <tr *ngFor="let instructor of instructorService.instructors">
         <td [innerHtml]="instructor.name"></td>
         <td [innerHtml]="instructor.email"></td>
         <td [innerHtml]="instructor.address"></td>
