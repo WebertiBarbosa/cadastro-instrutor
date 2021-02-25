@@ -52,4 +52,6 @@ export class InstructorNewComponent implements OnInit {
     console.log(this.instructors)
   }
 
+  
+
 }

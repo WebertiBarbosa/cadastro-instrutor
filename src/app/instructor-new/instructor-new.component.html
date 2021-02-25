@@ -4,8 +4,6 @@
   <h2>Cadastre-se no formulário abaixo:</h2>
 </div>
 
-
-
 <div class="container">
   <form>
     <div class="form-row">
@@ -24,75 +22,40 @@
         <label for="inputAddress">Endereço</label>
         <input type="text" [(ngModel)]="address" [ngModelOptions]="{standalone: true}" class="form-control" id="inputAddress" placeholder="Rua de Exemplo, nº 0">
       </div>
-      <div class="form-group col-md-6">
+      <div class="form-group col-md-4">
         <label for="inputTel">Telefone</label>
         <input type="text" [(ngModel)]="phone" prefix="+55" mask=" (00) 00000-0000" [ngModelOptions]="{standalone: true}" class="form-control" id="inputTel">
       </div>
-    </div>    
-
-    <div class="form-row">
       <div class="form-group col-md-2">
         <label for="inputIdade">Idade</label>
         <input type="number" [(ngModel)]="age" [ngModelOptions]="{standalone: true}" class="form-control" id="inputIdade" placeholder="Digite sua idade">
       </div>
-    </div>   
-
-    <!-- <div class="form-group mb-3">
-      <label for="modality">Modalidade</label>
-
-      <select id="modality" name="modality" 
-        [(ngModel)]="selectedModality" class="form-control">
-        
-        <option *ngFor='let modality of modality' [value]='modality.name'>
-          {{modality.name}}
-        </option>
-        
-      </select>
-    </div> -->
-
+    </div>    
     
     <div class="input-group mb-3">
-      <select class="custom-select" id="inputGroupSelect02">
+      
+      
+      <select class="custom-select" id="inputGroupSelect02" [(ngModel)]="especialidade" value="especialidade"  name="especialidade">
         <option selected>Escolher...</option>
-        <option value="1">Musculação</option>
-        <option value="2">Spinning</option>
-        <option value="3">Power Jump</option>
-        <option value="4">Zumba</option>
-        <option value="5">Yoga</option>
-        <option value="6">Pilates</option>
-        <option value="7">Funcional</option>
-        <option value="8">Body Pump</option>
-        <option value="9">Alongamento</option>
-        <option value="10">Lutas</option>
+        <option value="Musculação">Musculação</option>
+        <option value="Spinning">Spinning</option>
+        <option value="Power Jump">Power Jump</option>
+        <option value="Zumba">Zumba</option>
+        <option value="Yoga">Yoga</option>
+        <option value="Pilates">Pilates</option>
+        <option value="Funcional">Funcional</option>
+        <option value="Body Pump">Body Pump</option>
+        <option value="Alongamento">Alongamento</option>
+        <option value="Lutas">Lutas</option>
       </select>
+      
       <div class="input-group-append">
         <label class="input-group-text" for="inputGroupSelect02">Especialidade</label>
       </div>
     </div>
 
-
-    <!-- <div class="form-group mb-3">
-      <label for="modality">Especialidade</label>
-
-      <select id="modality" name="modality" 
-        [(ngModel)]="selectedModality" class="form-control">
-      
-        <select class="form-control">
-
-        <option *ngFor='let especialidade of especialidades' >
-          {{especialidade.name}}
-        </option>
-        
-      </select>
-    </div> -->
-
-
-    
-      
-        <button *ngIf="age >= 18" type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>
-      
-      
-   
+    <button *ngIf="age >= 18" type="button" (click)="addInstructor()" class="btn btn-primary">Cadastrar</button>  
+  
   </form>
 </div>
 

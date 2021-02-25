@@ -3,10 +3,12 @@
 }
 
 
-h1, h2 {
+h1, h2, h3 {
   color:rgb(17, 20, 245);
   margin: 0;
   padding: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
