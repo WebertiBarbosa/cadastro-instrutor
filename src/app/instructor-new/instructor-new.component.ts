@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import instructors from '../instructors';
 import { Instructor, InstructorService } from '../instructor.service';
 
 
