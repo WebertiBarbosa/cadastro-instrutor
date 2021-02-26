@@ -6,13 +6,15 @@ import { InstructorNewComponent } from './instructor-new/instructor-new.componen
 import { InstructorListComponent } from './instructor-list/instructor-list.component';
 
 import {FormsModule} from '@angular/forms'
-import { NgxMaskModule } from 'ngx-mask'
+import { NgxMaskModule } from 'ngx-mask';
+import { EspecialidadeColorDirective } from './especialidade-color.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     InstructorNewComponent,
-    InstructorListComponent
+    InstructorListComponent,
+    EspecialidadeColorDirective
   ],
   imports: [
     BrowserModule,

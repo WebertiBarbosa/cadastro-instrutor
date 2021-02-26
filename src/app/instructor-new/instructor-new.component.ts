@@ -30,6 +30,6 @@ export class InstructorNewComponent implements OnInit {
     this.instructorService.addInstructor(copy)
   }
 
-  
+   
 
 }

@@ -20,7 +20,21 @@
         <td [innerHtml]="instructor.address"></td>
         <td [innerHtml]="instructor.phone"></td>
         <td [innerHtml]="instructor.age"></td>
-        <td [innerHtml]="instructor.especialidade"></td>
+        <td [innerHtml]="instructor.especialidade" [ngClass]="{
+          'musculacao':instructor.especialidade === 'Musculação',
+          'spinning':instructor.especialidade ==='Spinning',
+          'powerJump':instructor.especialidade ==='Power Jump',
+          'zumba':instructor.especialidade ==='Zumba',
+          'yoga':instructor.especialidade ==='Yoga',
+          'pilates':instructor.especialidade ==='Pilates',
+          'funcional':instructor.especialidade ==='Funcional',
+          'bodyPump':instructor.especialidade ==='Body Pump',
+          'alongamento':instructor.especialidade ==='Alongamento',
+          'lutas':instructor.especialidade ==='Lutas'          
+        
+        }"></td>
+
+        
         
         
       </tr>
